@@ -1,0 +1,46 @@
+symbol: "EURUSD"
+dxy_symbol: "DX-Y.NYB"
+
+timeframes:
+  execution: "5m"
+  structure: "15m"
+  trend: "1h"
+
+timezone: "America/Santiago"
+
+scoring:
+  min_signal_score: 5
+  strong_signal_score: 7
+
+weights:
+  sweep: 2
+  structure_shift: 2
+  dxy_bias: 3
+  active_session: 1
+
+dxy_bias:
+  fast_ma: 10
+  slow_ma: 30
+  momentum_lookback: 5
+  min_separation_pct: 0.0005
+
+sessions:
+  london:
+    enabled: true
+    start_hour: 4
+    end_hour: 7
+
+  new_york:
+    enabled: true
+    start_hour: 9
+    end_hour: 12
+
+  tokyo:
+    enabled: false
+    start_hour: 21
+    end_hour: 0
+
+output:
+  save_signals_csv: true
+  save_logs: true
+  signals_path: "outputs/signals/signals.csv"
