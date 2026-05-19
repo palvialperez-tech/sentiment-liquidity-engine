@@ -46,3 +46,10 @@ Motor de trading para EUR/USD basado en:
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+
+## 🚀 Autor
+
+Patricio Alvial
+GitHub: @palvial-tech
+
+LinkedIn: [Patricio Alvial](https://www.linkedin.com/in/pperezalvial/)
